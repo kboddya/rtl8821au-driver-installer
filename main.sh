@@ -8,7 +8,7 @@ echo "Now I'm updating the repositories and your system"
   sudo zypper update
 }&>/dev/null
 echo "Now I install the necessary utilities for the driver"
-{
+{ 
   sudo apt install -y linux-headers-$(uname -r) build-essential dkms git libelf-dev
   sudo apt install -y dkms git build-essential
   sudo dnf -y install git dkms kernel-devel kernel-debug-devel
